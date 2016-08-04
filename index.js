@@ -22,7 +22,7 @@ var controller = Botkit.slackbot({
 
 // connect the bot to a stream of messages
 controller.spawn({
-  token: 'xoxb-65948641505-2EdBEP4C9zubBXlAshU5se94',
+  token: 'xoxp-65935158950-65935159094-66097948724-14037759ce',
 }).startRTM();
 
 
@@ -32,7 +32,7 @@ controller.hears('start',['direct_message'],function(bot,message) {
         {
             "text": "Help! I tried to reset my password but nothing happened!",
             "color": "#7CD197",
-            "image_url": "http://127.0.0.1:3000/hobbit1.png"
+            "image_url": "http://thehobbit.herokuapp.com:3000/hobbit1.png"
         }
     ]});
 
