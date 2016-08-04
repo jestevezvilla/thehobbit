@@ -1,0 +1,26 @@
+{
+  "name": "thehobbit",
+  "version": "1.0.0",
+  "description": "Storyteller Slackbot",
+  "main": "index.js",
+  "dependencies": {
+    "botkit": "^0.2.2",
+    "request": "^2.65.0"
+  },
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jestevezvilla/thehobbit.git"
+  },
+  "engines": {
+    "node": "0.12.x"
+  },
+  "keywords": [
+    "slack",
+    "terminal"
+  ],
+  "author": "javiscript",
+  "license": "MIT"
+}
