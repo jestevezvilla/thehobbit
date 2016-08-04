@@ -3,7 +3,7 @@ var path = require('path');
 var app = express();
 
 // Define the port to run on
-app.set('port', 3000);
+app.set('port', 80);
 
 app.use(express.static(path.join(__dirname, '/img')));
 
@@ -32,7 +32,7 @@ controller.hears('start',['direct_message'],function(bot,message) {
         {
             "text": "Help! I tried to reset my password but nothing happened!",
             "color": "#7CD197",
-            "image_url": "http://thehobbit.herokuapp.com:3000/hobbit1.png"
+            "image_url": "http://thehobbit.herokuapp.com/hobbit1.png"
         }
     ]});
 
