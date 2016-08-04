@@ -2,21 +2,21 @@ var express = require('express');
 var path = require('path');
 var app = express();
 
-// Define the port to run on
-app.set('port', 3000);
-
-app.use(express.static(path.join(__dirname, '/public')));
+var app = express();
+app.use(express.static(__dirname + "/public"));
 
 // Listen for requests
-var server = app.listen(app.get('port'), function() {
+// Initialize the app.
+var server = app.listen(process.env.PORT || 8080, function () {
   var port = server.address().port;
+  console.log("App now running on port", port);
 });
 
 var Botkit = require('botkit');
 var chapter1 = require('./chapter1/chapter1');
 
 var controller = Botkit.slackbot({
-  debug: true,
+  debug: false,
   json_file_store: 'history'
 });
 
